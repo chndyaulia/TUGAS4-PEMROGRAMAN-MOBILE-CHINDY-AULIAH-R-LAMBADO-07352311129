@@ -15,7 +15,6 @@ class Mahasiswa {
   }
 }
 
-// Class Dosen
 class Dosen {
   String nama;
   String nip;
@@ -32,7 +31,7 @@ class Dosen {
 }
 
 void main() {
-  // Input data mahasiswa
+  
   stdout.write("Masukkan nama mahasiswa: ");
   String? namaMhs = stdin.readLineSync();
 
@@ -44,7 +43,6 @@ void main() {
 
   Mahasiswa mhs = Mahasiswa(namaMhs!, nim!, kelas!);
 
-  // Input data dosen
   stdout.write("\nMasukkan nama dosen: ");
   String? namaDosen = stdin.readLineSync();
 
@@ -56,7 +54,6 @@ void main() {
 
   Dosen dosen = Dosen(namaDosen!, nip!, matkul!);
 
-  // Tampilkan data
   print("\n==============================");
   mhs.tampilkanData();
   dosen.tampilkanData();
